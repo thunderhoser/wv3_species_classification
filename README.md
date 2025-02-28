@@ -1,0 +1,4 @@
+ - `train_model.py` trains one model from the journal paper (with 6, 4, or 2 species classes), using 5-fold cross-validation, and produces a Pickle file with the out-of-bag prediction for every data sample.
+ - `run_permutation.py` runs the permutation importance test on one trained model.  With the argument `do_backwards_test = False`, this script runs both forward versions (single-pass and multi-pass) of the permutation test.  With the argument `do_backwards_test = True`, this script runs both backwards versions (single-pass and multi-pass) of the test.
+ - `plot_permutation_results.py` plots results of the permutation test, specifically all four versions of the test for one model.
+ - `plot_hyperparam_grids.py` plots results for one hyperparameter experiment -- the 6-class, 4-class, or 2-class experiment.  This yields, for each evaluation metric $\mathcal{M}$, a figure showing the value of $\mathcal{M}$ for every hyperparameter set.
